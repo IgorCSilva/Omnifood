@@ -37,6 +37,7 @@ export default {
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('./resources/css/img/hero.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     height: 100vh;        

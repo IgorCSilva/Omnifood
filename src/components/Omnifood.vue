@@ -10,6 +10,14 @@
         meals-section
 
         how-it-works
+
+        cities-section
+
+        customer-section
+        plans-section
+
+        form-section
+        footer-section
     
 </template>
 
@@ -20,6 +28,11 @@
   import FeatureSection from './sections/Features.vue'
   import MealsSection from './sections/Meals.vue'
   import HowItWorks from './sections/Steps.vue'
+  import CitiesSection from './sections/Cities.vue'
+  import CustomerSection from './sections/Customer.vue'
+  import PlansSection from './sections/Plans.vue'
+  import FormSection from './sections/Form.vue'
+  import FooterSection from './sections/Footer.vue'
 
 export default {
   name: 'HtmlCss',
@@ -27,7 +40,12 @@ export default {
     FoodHeader,
     FeatureSection,
     MealsSection,
-    HowItWorks
+    HowItWorks,
+    CitiesSection,
+    CustomerSection,
+    PlansSection,
+    FormSection,
+    FooterSection
   },
   data () {
     return {

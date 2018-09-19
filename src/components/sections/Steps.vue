@@ -69,6 +69,11 @@
         margin-right: 25px;
     }
 
+    .btn-app:link,
+    .btn-app:visited {
+        border: 0px;
+    }
+
     .btn-app img {
         height: 50px;
         width: auto;
