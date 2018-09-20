@@ -43,6 +43,10 @@ header {
     height: 100vh;        
 }
 
+header div a {
+    margin-bottom: 2px;
+}
+
 .hero-text-box {
     position: absolute;
     width: 1140px;
@@ -52,6 +56,15 @@ header {
 
     /* Porcentagens do próprio componente */
     transform: translate(-50%, -50%);
+}
+
+/* Big tablets to 1200px (widths smaller taht the 1140px row */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {        
+        width: 100%;
+        padding: 0 2%;
+        
+    }
 }
 
 .logo {

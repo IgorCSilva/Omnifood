@@ -147,4 +147,18 @@
         padding: 5px 0;
     }
 
+    /* Small tablets to big tablets: from 768px to 1023px */
+/* iPad landscape mede 1024px */
+@media only screen and (max-width: 1023px) {
+    .plan-box {
+       width: 100%;
+       margin-left: 0%; 
+    }
+
+    .plan-price {
+        font-size: 250%;
+    }
+    
+}
+
 </style>

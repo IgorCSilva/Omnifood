@@ -87,4 +87,22 @@
     *:focus {
         outline: none;
     }
+
+    /* Small tablets to big tablets: from 768px to 1023px */
+/* iPad landscape mede 1024px */
+@media only screen and (max-width: 1023px) {
+    .contact-form {
+        width: 80%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .contact-form {
+        width: 100%;
+    }
+
+    
+}
 </style>
