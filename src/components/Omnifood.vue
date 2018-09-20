@@ -61,4 +61,7 @@ export default {
   @import './vendors/css/grid.css';
   @import './vendors/css/normalize.css';
   @import './vendors/css/ionicons.min.css';
+
+  @import './resources/css/query.css';
+
 </style>

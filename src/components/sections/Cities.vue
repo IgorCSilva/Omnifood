@@ -74,4 +74,13 @@
         margin-bottom: 5px;
     }
 
+/* Small tablets to big tablets: from 768px to 1023px */
+/* iPad landscape mede 1024px */
+@media only screen and (max-width: 1023px) {
+    .city-feature {
+        font-size: 90%;
+    }
+
+    
+}
 </style>
