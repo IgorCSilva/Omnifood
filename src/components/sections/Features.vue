@@ -1,7 +1,7 @@
 
 <template lang="pug">
     
-    section.section-features
+    section#features.section-features.js--section-features
         div.row
             h2 Get food fast &mdash; not fast food
             p.long-copy Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!

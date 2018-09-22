@@ -1,7 +1,7 @@
 
 <template lang="pug">
     
-    section.section-plans
+    section#plans.section-plans.js--section-plans
         div.row
             h2 Start eating healthy today
         

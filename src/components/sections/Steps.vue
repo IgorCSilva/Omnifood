@@ -1,7 +1,7 @@
 
 <template lang="pug">
     
-    section.section-steps
+    section#works.section-steps
         div.row
             h2 How it works &mdash; Simple as 1, 2, 3
         

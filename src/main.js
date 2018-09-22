@@ -4,6 +4,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
+// import jQuery from 'jquery'
+// global.jQuery = jQuery
+// window.$ = global.jQuery
+
+import VueWaypoint from 'vue-waypoint'
+Vue.use(VueWaypoint)
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
