@@ -1,5 +1,5 @@
 <template lang="pug">
-    div.g-html 
+    div#todoApp.g-html 
         //- HEADER
         food-header
 
@@ -21,6 +21,7 @@
     
 </template>
 
+   
 
 <script>
 
@@ -33,6 +34,10 @@
   import PlansSection from './sections/Plans.vue'
   import FormSection from './sections/Form.vue'
   import FooterSection from './sections/Footer.vue'
+
+  import { activeJqueryScript } from './resources/js/script.js'
+
+  
 
 export default {
   name: 'HtmlCss',
@@ -51,7 +56,12 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  mounted(){
+      // Ativando o código de script.
+      activeJqueryScript()
   }
+
 }
 </script>
 
@@ -63,5 +73,6 @@ export default {
   @import './vendors/css/ionicons.min.css';
 
   @import './resources/css/query.css';
+  
 
 </style>

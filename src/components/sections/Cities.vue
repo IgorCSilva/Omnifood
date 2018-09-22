@@ -1,7 +1,7 @@
 
 <template lang="pug">
     
-    section.section-cities
+    section#cities.section-cities
         div.row
             h2 We're currently in these cities
         

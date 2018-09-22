@@ -4,15 +4,18 @@
         nav
             div.row
                 img.logo(:src="require('./resources/img/logo-white.png')" alt="Omnifood logo")
-                ul.main-nav 
+                ul.main-nav.js--main-nav 
                     li(v-for="link in links")
-                        a(href="#") {{link}}
+                        a(:href="link.href") {{link.text}}
+                
+                a.mobile-nav-icon.js--nav-icon
+                    i.ion-navicon-round
         div.hero-text-box
             h1  Goodbye junk food.
                 br 
                 | Help super healthy meals.
-            a.btn.btn-full(href="#") I'm hungry
-            a.btn.btn-ghost(href="#") Show me more
+            a.btn.btn-full.js--scroll-to-plans(href="#") I'm hungry
+            a.btn.btn-ghost.js--scroll-to-start(href="#") Show me more
             
 </template>
 
@@ -21,10 +24,23 @@ export default {
     data(){
         return{
             links: [
-                'Food delivery',
-                'How it works',
-                'Our cities',
-                'Sing up'
+                {
+                    href: '#features',
+                    text: 'Food delivery'
+                },
+                {
+                    href: '#works',
+                    text: 'How it works'
+                },
+                {
+                    href: '#cities',
+                    text: 'Our cities'
+                },
+                {
+                    href: '#plans',
+                    text: 'Sing up'
+                },
+                
             ]
         }
     }
@@ -56,6 +72,18 @@ header div a {
 
     /* Porcentagens do próprio componente */
     transform: translate(-50%, -50%);
+}
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: white;
 }
 
 /* Big tablets to 1200px (widths smaller taht the 1140px row */
@@ -97,6 +125,30 @@ header div a {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+}
+
+ /* Small phones to small tablets: from 481px to 767px */
+/* iPad mede 768px */
+@media only screen and (max-width: 767px) {
+   
+   .main-nav {display: none;}
+    .mobile-nav-icon {display: inline-block;}
+   
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    .main-nav li {
+        display: block;
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
 }
 </style>
 
